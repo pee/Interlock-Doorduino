@@ -1,0 +1,14 @@
+
+
+Code to control the door at Interlock Rochester,
+
+Opens using ibutton attached to ldap, or using a short included list of buttons
+
+Currently written to use a nanode
+
+http://wickeddevice.com/index.php?main_page=index&cPath=26
+http://nanode.eu/
+http://wiki.london.hackspace.org.uk/view/Project:Nanode
+
+
+
