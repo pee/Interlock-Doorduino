@@ -57,9 +57,11 @@ void printNetworkParameters(){
   printIP( ethDNS );
   Serial.println();  
   
+#ifdef USE_DHCP
   Serial.print( "DHCP IP: " );
   printIP( dhcpIP );
   Serial.println();
+#endif
 
 }
 

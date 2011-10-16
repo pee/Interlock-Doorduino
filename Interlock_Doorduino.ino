@@ -187,6 +187,7 @@ void setup() {
   // turn the reader LED on
   digitalWrite(readerLED, HIGH);
 
+
 }
 
 void loop() {
@@ -201,7 +202,6 @@ void loop() {
   boolean ldapOK = false;
   
   boolean localOK = false;
-
 
   // Allow for processing outside of 1wire/ibutton processing
   plen = es.ES_enc28j60PacketReceive( BUFFER_SIZE , buf );
@@ -231,6 +231,7 @@ void loop() {
   //
   delay(250);
   
+  memset( buf, 0, BUFFER_SIZE );
   plen = es.ES_enc28j60PacketReceive(BUFFER_SIZE, buf);
   datp = es.ES_packetloop_icmp_tcp(buf,plen);
 
